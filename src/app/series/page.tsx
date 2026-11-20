@@ -112,11 +112,118 @@ export default function SeriesPage() {
       </section>
 
       <div className="max-w-6xl mx-auto px-6">
+        {/* Verified Video Playlists From Official YouTube Channel */}
+        <div className="mb-14">
+          <div className="mb-6">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#B86C20] block mb-1">
+              Official Broadcast Playlists
+            </span>
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#122236]">
+              Featured YouTube &amp; Podcast Playlists
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Playlist 1: It Shall End in Praise */}
+            <div className="bg-white border border-[#E6E0D6] rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+              <div>
+                <div className="aspect-video w-full bg-black relative">
+                  <iframe
+                    src="https://www.youtube.com/embed/videoseries?list=PLUDoUc2H1zpKIWY53EYfL7ergcizceQ9y"
+                    title="It Shall End in Praise Series"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 text-xs text-[#B86C20] font-bold uppercase tracking-wider mb-2">
+                    <span>7 Full Episodes</span>
+                    <span>•</span>
+                    <span>Expository Series</span>
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-[#122236] mb-3">
+                    It Shall End in Praise Series
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed mb-4">
+                    Pastor Solomon Amao walks through Joel 2, Zechariah 4, Romans 8, and Psalm 113, proving that in Christ Jesus, suffering and shame are never the final word.
+                  </p>
+                </div>
+              </div>
+
+              <div className="px-6 pb-6 pt-3 border-t border-[#EFEAE1] flex items-center justify-between">
+                <a
+                  href="https://open.spotify.com/show/4UdQKlyfbCw6M7s2DJMMvy?si=4f2b3401707c4203"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-bold text-[#1DB954] hover:underline"
+                >
+                  🎧 Listen on Spotify
+                </a>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLUDoUc2H1zpKIWY53EYfL7ergcizceQ9y"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-bold text-[#FF0000] hover:underline"
+                >
+                  ▶ Open on YouTube
+                </a>
+              </div>
+            </div>
+
+            {/* Playlist 2: Psalm 23 Series */}
+            <div className="bg-white border border-[#E6E0D6] rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+              <div>
+                <div className="aspect-video w-full bg-black relative">
+                  <iframe
+                    src="https://www.youtube.com/embed/videoseries?list=PLUDoUc2H1zpLR0tk5-9fSRAKGiISWvSVe"
+                    title="Psalm 23 Explained Series"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 text-xs text-[#B86C20] font-bold uppercase tracking-wider mb-2">
+                    <span>Multi-Part Series</span>
+                    <span>•</span>
+                    <span>Psalm 23</span>
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-[#122236] mb-3">
+                    The Sheep’s Story: Yahweh Takes Good Care of Me
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed mb-4">
+                    An unforgettable verse-by-verse examination of Psalm 23 from the perspective of the sheep, highlighting the Shepherd&apos;s providence, guidance through valleys, and prepared table.
+                  </p>
+                </div>
+              </div>
+
+              <div className="px-6 pb-6 pt-3 border-t border-[#EFEAE1] flex items-center justify-between">
+                <span className="text-xs text-[#64748B]">Verse-by-Verse Exegesis</span>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLUDoUc2H1zpLR0tk5-9fSRAKGiISWvSVe"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-bold text-[#FF0000] hover:underline"
+                >
+                  ▶ Open Playlist on YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Flagship Series Header Card */}
-        <div className="bg-white border border-[#E6E0D6] rounded-lg p-8 sm:p-10 shadow-sm mb-12">
+        <div className="bg-white border border-[#E6E0D6] rounded-xl p-8 sm:p-10 shadow-sm mb-12">
           <div className="max-w-3xl">
             <span className="text-xs font-bold uppercase tracking-widest text-[#B86C20] block mb-2">
-              Flagship Curriculum • 5-Part Expository Study
+              Curriculum Study • 5-Part In-Depth Exegesis
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-[#122236] mb-4">
               Living as God’s Letter
@@ -153,7 +260,7 @@ export default function SeriesPage() {
                 <button
                   key={part.partNumber}
                   onClick={() => setActivePart(part.partNumber)}
-                  className={`w-full text-left p-4 rounded border transition-all flex items-start gap-3 ${
+                  className={`w-full text-left p-4 rounded-lg border transition-all flex items-start gap-3 ${
                     isSelected
                       ? 'bg-[#122236] text-white border-[#122236] shadow-sm'
                       : 'bg-white text-[#1E293B] border-[#E6E0D6] hover:border-[#B86C20]'
@@ -186,7 +293,7 @@ export default function SeriesPage() {
           </div>
 
           {/* Active Part Study Content */}
-          <div className="lg:col-span-8 bg-white border border-[#E6E0D6] rounded-lg p-6 sm:p-10 shadow-sm">
+          <div className="lg:col-span-8 bg-white border border-[#E6E0D6] rounded-xl p-6 sm:p-10 shadow-sm">
             <div className="border-b border-[#EFEAE1] pb-6 mb-6">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#B86C20] mb-2">
                 <span>Session {currentPartData.partNumber} of 5</span>

@@ -82,12 +82,21 @@ export default function AdminPage() {
     e.preventDefault();
     if (!artTitle || !artContent) return;
 
+    const id = 'art-' + Date.now();
+    const slug = artTitle
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)+/g, '');
+
     saveArticle({
+      id,
+      slug,
       title: artTitle,
       author: 'Pastor Solomon Amao',
       scripture: artScripture || '2 Corinthians 3',
       category: artCategory,
       readTime: artReadTime,
+      publishedAt: 'New Release',
       excerpt: artExcerpt || artContent.slice(0, 140) + '...',
       content: artContent,
       imageUrl: artImageUrl,
@@ -108,14 +117,19 @@ export default function AdminPage() {
     if (!vidTitle || !vidEmbedUrl) return;
 
     const formattedUrl = formatEmbedUrl(vidEmbedUrl);
+    const id = 'vid-' + Date.now();
+    const episodeNumber = videosList.length + 1;
 
     saveVideoQuestion({
+      id,
+      episodeNumber,
       title: vidTitle,
       seekerName: vidSeeker || 'Anonymous Seeker',
       scripture: vidScripture || 'Scriptural Counsel',
       videoEmbedUrl: formattedUrl,
       duration: vidDuration,
       releaseDay: vidReleaseDay,
+      publishedAt: `${vidReleaseDay} Broadcast`,
       summary: vidSummary || 'Pastoral answer delivered by Pastor Solomon Amao.',
       thumbnailUrl: 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?auto=format&fit=crop&w=800&q=80',
     });

@@ -65,159 +65,136 @@ Grace is not God lowering His standards; grace is God supplying His supernatural
   },
 ];
 
+// Actual videos verified from @the-livingletters YouTube channel
 export const INITIAL_VIDEOS: VideoQuestion[] = [
   {
-    id: 'vid-1',
-    episodeNumber: 14,
-    title: 'How Do I Discern God’s Voice When Making Major Life Decisions?',
-    seekerName: 'Brother Emmanuel',
-    scripture: 'John 10:27 • Proverbs 3:5–6 • Romans 12:1–2',
-    videoEmbedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Placeholder embed
-    duration: '28:45',
+    id: 'vid-wAnGZ64nMKg',
+    episodeNumber: 20,
+    title: 'You Become What You Worship | The Mirror Effect of Worship',
+    seekerName: 'Living Letters Discipleship',
+    scripture: '2 Corinthians 3:18 • Psalm 115:8',
+    videoEmbedUrl: 'https://www.youtube.com/embed/wAnGZ64nMKg',
+    duration: '24:15',
+    releaseDay: 'Friday',
+    publishedAt: 'Latest Release',
+    summary: 'Pastor Solomon Amao explores the spiritual reality that whatever holds your ultimate affection shapes your character, revealing how beholding Christ transforms us into His image.',
+    thumbnailUrl: 'https://img.youtube.com/vi/wAnGZ64nMKg/hqdefault.jpg',
+  },
+  {
+    id: 'vid-lYKB2_hAHnc',
+    episodeNumber: 19,
+    title: 'God’s Purpose in Your Pain | John 15:1–8',
+    seekerName: 'Living Letters Community',
+    scripture: 'John 15:1–8 • Hebrews 12:5–11',
+    videoEmbedUrl: 'https://www.youtube.com/embed/lYKB2_hAHnc',
+    duration: '28:40',
     releaseDay: 'Tuesday',
     publishedAt: 'Tuesday Broadcast',
-    summary: 'Pastor Solomon breaks down the biblical harmony between the written Word of God, the inward witness of peace, and mature godly counsel when facing crucial life crossroads.',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?auto=format&fit=crop&w=800&q=80',
+    summary: 'The difference between God’s cutting away (pruning) for fruitfulness versus destructive opposition. Trusting the divine Vinedresser in seasons of suffering.',
+    thumbnailUrl: 'https://img.youtube.com/vi/lYKB2_hAHnc/hqdefault.jpg',
   },
   {
-    id: 'vid-2',
-    episodeNumber: 15,
-    title: 'Overcoming Lingering Guilt and Condemnation After Repentance',
-    seekerName: 'Sister Grace',
-    scripture: 'Romans 8:1 • 1 John 1:9 • Hebrews 10:14–17',
-    videoEmbedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '32:10',
+    id: 'vid-JI9mFabUKIM',
+    episodeNumber: 18,
+    title: 'God’s One Answer to Your Many Questions | Psalm 121',
+    seekerName: 'Biblical Inquirer',
+    scripture: 'Psalm 121:1–8 • Isaiah 26:3',
+    videoEmbedUrl: 'https://www.youtube.com/embed/JI9mFabUKIM',
+    duration: '31:20',
     releaseDay: 'Friday',
     publishedAt: 'Friday Broadcast',
-    summary: 'Distinguishing between the convicting ministry of the Holy Spirit and the adversary\'s lingering condemnation. Resting in the eternal verdict of the blood of Jesus.',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1447069387593-a5de0862481e?auto=format&fit=crop&w=800&q=80',
+    summary: 'When life overwhelms with countless anxieties, God does not give fifty different answers—He gives Himself as Keeper, Shade, and Preservation.',
+    thumbnailUrl: 'https://img.youtube.com/vi/JI9mFabUKIM/hqdefault.jpg',
   },
   {
-    id: 'vid-3',
-    episodeNumber: 13,
-    title: 'What Is the True Biblical Purpose of Fasting and Prayer?',
-    seekerName: 'Anonymous Believer',
-    scripture: 'Matthew 6:16–18 • Isaiah 58:6–9',
-    videoEmbedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '26:15',
+    id: 'vid-d3x36P72HgI',
+    episodeNumber: 17,
+    title: 'What Is the Main Message of Psalm 23? | The Shepherd’s Greatest Promise',
+    seekerName: 'Psalm 23 Study Series',
+    scripture: 'Psalm 23:1 • John 10:11',
+    videoEmbedUrl: 'https://www.youtube.com/embed/d3x36P72HgI',
+    duration: '26:50',
     releaseDay: 'Tuesday',
     publishedAt: 'Tuesday Broadcast',
-    summary: 'Why fasting does not change God\'s mind, but aligns the believer\'s soul and physical appetites into sensitivity to the Holy Spirit.',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80',
+    summary: 'A deep expository breakdown of why Yahweh being our Shepherd is the ultimate antidote to spiritual lack and fear.',
+    thumbnailUrl: 'https://img.youtube.com/vi/d3x36P72HgI/hqdefault.jpg',
   },
   {
-    id: 'vid-4',
-    episodeNumber: 12,
-    title: 'How Can I Grow Spiritually When Facing Continual Obstacles?',
-    seekerName: 'Joshua M.',
-    scripture: 'James 1:2–4 • Romans 5:3–5 • 2 Peter 3:18',
-    videoEmbedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '35:40',
-    releaseDay: 'Friday',
-    publishedAt: 'Friday Broadcast',
-    summary: 'How trials and hardships serve in God\'s sovereign design to mature theoretical faith into experiential authority and unshakable endurance.',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80',
-  },
-];
-
-export const INITIAL_SERMONS: Sermon[] = [
-  {
-    id: 'sermon-1',
-    title: 'It Shall End in Praise',
-    speaker: 'Pastor Solomon Amao',
-    scripture: 'Romans 8:28 • Psalm 30:5',
+    id: 'vid-1C74ty-yRYc',
+    episodeNumber: 1,
+    title: 'It Shall End in Praise Ep 1 || Ending the Shame and Restoring the Lost Years',
+    seekerName: 'It Shall End in Praise Series',
+    scripture: 'Joel 2:18–27 • Romans 8:28',
+    videoEmbedUrl: 'https://www.youtube.com/embed/1C74ty-yRYc',
     duration: '42:15',
-    audioUrl: 'https://example.com/audio/it-shall-end-in-praise.mp3',
-    publishedAt: 'Featured Sermon',
-    description: 'An encouraging exposition on why trials in the believer’s life are always engineered by divine sovereignty to culminate in victory and praise.',
+    releaseDay: 'Tuesday',
+    publishedAt: 'Foundational Broadcast',
+    summary: 'Pastor Solomon Amao begins the acclaimed series unveiling God’s supernatural covenant promise to redeem seasons of shame and loss into lasting praise.',
+    thumbnailUrl: 'https://img.youtube.com/vi/1C74ty-yRYc/hqdefault.jpg',
   },
   {
-    id: 'sermon-2',
-    title: 'You Are God’s Letter',
-    speaker: 'Pastor Solomon Amao',
-    scripture: '2 Corinthians 3:1–6',
-    series: 'Living as God’s Letter (Part 1)',
-    duration: '48:30',
-    audioUrl: 'https://example.com/audio/you-are-gods-letter.mp3',
-    publishedAt: 'Series Message',
-    description: 'Discovering our new covenant identity as living epistles inscribed by the Spirit of the living God.',
-  },
-  {
-    id: 'sermon-3',
-    title: 'The Ink of the Holy Spirit',
-    speaker: 'Pastor Solomon Amao',
-    scripture: 'Romans 8:1–14 • 2 Corinthians 3:3',
-    series: 'Living as God’s Letter (Part 2)',
-    duration: '51:10',
-    audioUrl: 'https://example.com/audio/the-ink-of-the-holy-spirit.mp3',
-    publishedAt: 'Series Message',
-    description: 'How the Holy Spirit replaces the dead letter of legalism with the vibrant, life-giving power of grace in human hearts.',
+    id: 'vid-ZMJsAs7hrvY',
+    episodeNumber: 2,
+    title: 'It Shall End in Praise Ep 2 || The Smallness that Attracts God',
+    seekerName: 'It Shall End in Praise Series',
+    scripture: 'Zechariah 4:1–10',
+    videoEmbedUrl: 'https://www.youtube.com/embed/ZMJsAs7hrvY',
+    duration: '38:30',
+    releaseDay: 'Friday',
+    publishedAt: 'Broadcast Episode',
+    summary: 'Do not despise the day of small beginnings. Understanding how God’s Spirit operates through human humility rather than worldly might.',
+    thumbnailUrl: 'https://img.youtube.com/vi/ZMJsAs7hrvY/hqdefault.jpg',
   },
 ];
 
-// Browser LocalStorage helpers for Pastor Solomon's Admin Access
-const ARTICLES_STORAGE_KEY = 'll_ministry_articles';
-const VIDEOS_STORAGE_KEY = 'll_ministry_videos';
+// Helper to interact with LocalStorage
+const STORAGE_KEYS = {
+  ARTICLES: 'living_letters_articles_v2',
+  VIDEOS: 'living_letters_videos_v2',
+};
 
 export function getArticles(): Article[] {
   if (typeof window === 'undefined') return INITIAL_ARTICLES;
   try {
-    const raw = localStorage.getItem(ARTICLES_STORAGE_KEY);
-    if (!raw) {
-      localStorage.setItem(ARTICLES_STORAGE_KEY, JSON.stringify(INITIAL_ARTICLES));
-      return INITIAL_ARTICLES;
-    }
-    return JSON.parse(raw);
-  } catch {
+    const data = localStorage.getItem(STORAGE_KEYS.ARTICLES);
+    return data ? JSON.parse(data) : INITIAL_ARTICLES;
+  } catch (e) {
+    console.error('Failed to load articles from storage', e);
     return INITIAL_ARTICLES;
   }
 }
 
-export function saveArticle(article: Omit<Article, 'id' | 'slug' | 'publishedAt'>): Article {
-  const articles = getArticles();
-  const newArticle: Article = {
-    ...article,
-    id: `art-${Date.now()}`,
-    slug: article.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, ''),
-    publishedAt: 'Just Published',
-  };
-  const updated = [newArticle, ...articles];
-  if (typeof window !== 'undefined') {
-    localStorage.setItem(ARTICLES_STORAGE_KEY, JSON.stringify(updated));
+export function saveArticle(article: Article): void {
+  if (typeof window === 'undefined') return;
+  try {
+    const current = getArticles();
+    const updated = [article, ...current.filter((a) => a.id !== article.id)];
+    localStorage.setItem(STORAGE_KEYS.ARTICLES, JSON.stringify(updated));
     window.dispatchEvent(new Event('ll-content-updated'));
+  } catch (e) {
+    console.error('Failed to save article to storage', e);
   }
-  return newArticle;
 }
 
 export function getVideoQuestions(): VideoQuestion[] {
   if (typeof window === 'undefined') return INITIAL_VIDEOS;
   try {
-    const raw = localStorage.getItem(VIDEOS_STORAGE_KEY);
-    if (!raw) {
-      localStorage.setItem(VIDEOS_STORAGE_KEY, JSON.stringify(INITIAL_VIDEOS));
-      return INITIAL_VIDEOS;
-    }
-    return JSON.parse(raw);
-  } catch {
+    const data = localStorage.getItem(STORAGE_KEYS.VIDEOS);
+    return data ? JSON.parse(data) : INITIAL_VIDEOS;
+  } catch (e) {
+    console.error('Failed to load videos from storage', e);
     return INITIAL_VIDEOS;
   }
 }
 
-export function saveVideoQuestion(
-  video: Omit<VideoQuestion, 'id' | 'publishedAt' | 'episodeNumber'>
-): VideoQuestion {
-  const videos = getVideoQuestions();
-  const nextEpisode = (videos[0]?.episodeNumber || 15) + 1;
-  const newVideo: VideoQuestion = {
-    ...video,
-    id: `vid-${Date.now()}`,
-    episodeNumber: nextEpisode,
-    publishedAt: `${video.releaseDay} Broadcast`,
-  };
-  const updated = [newVideo, ...videos];
-  if (typeof window !== 'undefined') {
-    localStorage.setItem(VIDEOS_STORAGE_KEY, JSON.stringify(updated));
+export function saveVideoQuestion(video: VideoQuestion): void {
+  if (typeof window === 'undefined') return;
+  try {
+    const current = getVideoQuestions();
+    const updated = [video, ...current.filter((v) => v.id !== video.id)];
+    localStorage.setItem(STORAGE_KEYS.VIDEOS, JSON.stringify(updated));
     window.dispatchEvent(new Event('ll-content-updated'));
+  } catch (e) {
+    console.error('Failed to save video to storage', e);
   }
-  return newVideo;
 }
