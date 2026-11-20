@@ -160,19 +160,19 @@ export default function QAPage() {
         <section className="bg-white border border-[#E6E0D6] rounded p-8 max-w-3xl mx-auto shadow-sm mb-12" id="ask">
           <div className="text-center mb-8">
             <span className="text-xs font-bold uppercase tracking-widest text-[#B86C20] mb-1 block">
-              Ask Pastor Solomon Amao
+              Heart&apos;s Questions
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#122236]">
               Submit a Question for Upcoming Videos
             </h2>
             <p className="text-xs sm:text-sm text-[#64748B] mt-2">
-              Every week, Pastor Solomon selects questions to address in our Tuesday &amp; Friday long-form video teachings.
+              Every week, our teaching ministry selects questions from the community to address in our Tuesday &amp; Friday long-form video teachings.
             </p>
           </div>
 
           {submitted ? (
             <div className="p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded font-semibold text-sm text-center">
-              ✓ Thank you! Your question was submitted for Pastor Solomon&apos;s review.
+              ✓ Thank you! Your question was submitted for pastoral review.
             </div>
           ) : (
             <form onSubmit={handleSubmitQuestion} className="space-y-4">
@@ -222,7 +222,7 @@ export default function QAPage() {
                 type="submit"
                 className="w-full bg-[#122236] hover:bg-[#B86C20] text-white font-bold text-sm py-3 rounded transition-all shadow"
               >
-                Submit Question to Pastor Solomon Amao →
+                Submit Your Question →
               </button>
             </form>
           )}
@@ -268,7 +268,7 @@ export default function QAPage() {
                 {activeVideo.summary}
               </p>
               <div className="flex justify-between items-center text-xs text-gray-400">
-                <span>Teacher: Pastor Solomon Amao</span>
+                <span>Ministry: The Living Letters</span>
                 <button
                   onClick={() => setActiveVideo(null)}
                   className="bg-[#B86C20] hover:bg-[#92400E] text-white px-4 py-1.5 rounded font-bold"

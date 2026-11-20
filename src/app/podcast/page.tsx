@@ -23,7 +23,7 @@ const SPOTIFY_EPISODES: SpotifyEpisode[] = [
     duration: '42:15',
     spotifyId: '5aHcKrt7joAjtyQ8cfzHnl',
     youtubeId: '1C74ty-yRYc',
-    description: 'Pastor Solomon Amao begins this foundational broadcast unveiling God’s covenant promise to heal past trauma, restore wasted years, and turn spiritual reproach into a living praise.',
+    description: 'The Living Letters begins this foundational broadcast unveiling God’s covenant promise to heal past trauma, restore wasted years, and turn spiritual reproach into a living praise.',
   },
   {
     episodeNumber: 2,
@@ -63,7 +63,7 @@ const SPOTIFY_EPISODES: SpotifyEpisode[] = [
     duration: '41:20',
     spotifyId: '7e48HD24gfnPQHEb8Tu0g0',
     youtubeId: '9IkE_BqNQ34',
-    description: 'Weeping may endure for a night, but joy comes in the morning. Pastor Solomon provides comforting pastoral guidance on maintaining praise through dark seasons.',
+    description: 'Weeping may endure for a night, but joy comes in the morning. This broadcast provides comforting pastoral guidance on maintaining praise through dark seasons.',
   },
   {
     episodeNumber: 6,
@@ -146,7 +146,7 @@ export default function PodcastPage() {
                 {activeEp.title}
               </h2>
               <span className="text-xs text-gray-400 mt-1 block">
-                {activeEp.scripture} • Speaker: <strong>Pastor Solomon Amao</strong>
+                {activeEp.scripture} • Ministry: <strong>The Living Letters</strong>
               </span>
             </div>
 

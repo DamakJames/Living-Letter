@@ -149,7 +149,7 @@ export default function SeriesPage() {
                     It Shall End in Praise Series
                   </h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed mb-4">
-                    Pastor Solomon Amao walks through Joel 2, Zechariah 4, Romans 8, and Psalm 113, proving that in Christ Jesus, suffering and shame are never the final word.
+                    This foundational series walks through Joel 2, Zechariah 4, Romans 8, and Psalm 113, proving that in Christ Jesus, suffering and shame are never the final word.
                   </p>
                 </div>
               </div>

@@ -31,7 +31,7 @@ const SLIDES: Slide[] = [
     description:
       'Rooted in the Holy Scriptures and led by the Spirit of the living God. Equipping believers to walk in authentic spiritual authority and grace.',
     primaryBtn: { text: 'Follow Teaching Series', href: '/series' },
-    secondaryBtn: { text: 'Meet Pastor Solomon Amao', href: '/about' },
+    secondaryBtn: { text: 'About Our Vision & Calling', href: '/about' },
     imageUrl: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1600&q=80',
   },
   {
