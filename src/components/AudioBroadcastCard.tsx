@@ -87,7 +87,7 @@ export default function AudioBroadcastCard() {
               It Shall End in Praise
             </h2>
             <p className="text-xs sm:text-sm text-gray-300 font-medium mb-4">
-              Speaker: <strong>Pastor Solomon Amao</strong> • Current Episode: <strong>Ep {selectedEp.num} ({selectedEp.scripture})</strong>
+              The Living Letters Expository Broadcast • Episode {selectedEp.num} ({selectedEp.scripture})
             </p>
             <p className="text-sm text-gray-300 leading-relaxed mb-6">
               In the life of the believer, trials, contradictions, and seasons of delay are never the final chapter. Christ always leads us in triumph. Listen to the 7-part expository broadcast series streaming on Spotify and YouTube.

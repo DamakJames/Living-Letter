@@ -106,7 +106,7 @@ export default function SeriesPage() {
             Teaching Series &amp; Studies
           </h1>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Sequential multi-part biblical studies by Pastor Solomon Amao designed to move believers systematically from spiritual foundation to maturity.
+            Sequential multi-part biblical studies from The Living Letters designed to move believers systematically from spiritual foundation to maturity.
           </p>
         </div>
       </section>
@@ -234,7 +234,7 @@ export default function SeriesPage() {
 
             <div className="flex flex-wrap gap-4 text-xs font-semibold text-[#122236]">
               <span className="bg-[#FAF8F5] border border-[#E6E0D6] px-3.5 py-1.5 rounded">
-                Author: <strong>Pastor Solomon Amao</strong>
+                Ministry: <strong>The Living Letters</strong>
               </span>
               <span className="bg-[#FAF8F5] border border-[#E6E0D6] px-3.5 py-1.5 rounded">
                 Text: <strong>2 Corinthians 3:1–18</strong>

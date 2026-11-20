@@ -23,7 +23,7 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. Moveable Photo Hero Slider (User Requested) */}
+      {/* 1. Moveable Photo Hero Slider */}
       <HeroSlider />
 
       {/* 2. Who We Are (Desiring God / WordPress Editorial Two-Column) */}
@@ -38,12 +38,11 @@ export default function HomePage() {
                 A Ministry Rooted in Scripture &amp; Spirit
               </h2>
               <p className="text-base sm:text-lg text-[#334155] leading-relaxed mb-4">
-                The Living Letters is a Christ-centered teaching ministry founded by{' '}
-                <strong>Pastor Solomon Amao</strong>, focused on raising believers who understand Scripture, grow in spiritual maturity, and live out the life of Christ daily.
+                The Living Letters is a Christ-centered teaching and media ministry focused on raising believers who understand Scripture, grow in spiritual maturity, and live out the life of Christ daily.
               </p>
               <p className="text-sm sm:text-base text-[#475569] leading-relaxed mb-6">
-                The entire name and concept of <em>&quot;Living Letters&quot;</em> came when he read and meditated upon{' '}
-                <strong>2 Corinthians 3:1–18</strong>, realizing that God calls His people to be living, breathing epistles delivered by Christ to the world.
+                The entire name and vision of <em>&quot;The Living Letters&quot;</em> came from deep meditation upon{' '}
+                <strong>2 Corinthians 3:1–18</strong>, realizing that God calls His people to be living, breathing epistles delivered by Christ to the world—known and read by all.
               </p>
 
               {/* 2 Corinthians 3:2–3 Quote Box */}
@@ -58,12 +57,12 @@ export default function HomePage() {
                 href="/about"
                 className="inline-flex items-center gap-2 font-bold text-sm text-[#122236] hover:text-[#B86C20] border-b-2 border-[#122236] hover:border-[#B86C20] pb-0.5 transition-all"
               >
-                Learn More About Pastor Solomon &amp; Our Vision →
+                Learn More About Our Ministry &amp; Vision →
               </Link>
             </div>
 
             {/* Side Card: Convictions */}
-            <div className="lg:col-span-5 bg-[#FAF8F5] border border-[#E6E0D6] rounded p-8 shadow-sm">
+            <div className="lg:col-span-5 bg-[#FAF8F5] border border-[#E6E0D6] rounded-lg p-8 shadow-sm">
               <h3 className="font-serif text-xl font-bold text-[#122236] mb-5 border-b border-[#E6E0D6] pb-3">
                 Foundational Convictions
               </h3>
@@ -101,7 +100,7 @@ export default function HomePage() {
       {/* 5. Featured Audio Broadcast */}
       <AudioBroadcastCard />
 
-      {/* 6. Featured Written Articles (Slots for Pastor Solomon's 3 Articles) */}
+      {/* 6. Featured Written Articles */}
       <FeaturedArticles />
 
       {/* DEVOTIONALS (HOMEPAGE STATUS: INACTIVE UNTIL NEXT YEAR AS REQUESTED)
@@ -111,7 +110,7 @@ export default function HomePage() {
            Maybe just make the line of code inactive so that it can be reversed when he is ready" */}
       {/* 
       <section className="devotionals-inactive-homepage-preview" style={{ display: 'none' }}>
-        <h3>Daily Devotionals with Pastor Solomon Amao</h3>
+        <h3>Daily Devotionals with The Living Letters</h3>
         <p>Launching 2027: A daily 28-day foundational journey in God's Word.</p>
       </section> 
       */}

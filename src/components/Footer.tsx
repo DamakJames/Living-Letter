@@ -19,15 +19,12 @@ export default function Footer() {
               <div className="flex flex-col">
                 <span className="font-serif font-extrabold text-xl text-white">The Living Letters</span>
                 <span className="text-[10px] text-[#FBBF24] uppercase tracking-wider font-semibold">
-                  Pastor Solomon Amao
+                  Equip • Encourage • Inspire
                 </span>
               </div>
             </div>
-            <p className="text-sm leading-relaxed text-[#94A3B8] mb-4">
+            <p className="text-sm leading-relaxed text-[#94A3B8] mb-6">
               A Christ-centered teaching and media ministry dedicated to equipping believers to live as letters written by the Holy Spirit—known and read by all.
-            </p>
-            <p className="text-[11px] font-bold text-[#FBBF24] tracking-widest uppercase mb-6">
-              EQUIP • ENCOURAGE • INSPIRE
             </p>
 
             {/* Social Icons with Official Verified Ministry Links */}
@@ -117,7 +114,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
-                  About Pastor Solomon &amp; Ministry
+                  About Us
                 </Link>
               </li>
               <li>
@@ -154,11 +151,6 @@ export default function Footer() {
                   Speaking &amp; Ministry Inquiries
                 </Link>
               </li>
-              <li>
-                <Link href="/admin" className="text-[#FBBF24] hover:underline font-semibold">
-                  Pastor Admin Access
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -176,7 +168,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar: STRICTLY only "© 2026 The Living Letters. All rights reserved." as requested */}
+        {/* Bottom Bar: STRICTLY only "© 2026 The Living Letters. All rights reserved." */}
         <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-xs text-[#64748B] gap-4">
           <p>© 2026 The Living Letters. All rights reserved.</p>
           <div className="flex gap-4">

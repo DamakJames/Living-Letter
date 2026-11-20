@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { Article } from '../../lib/types';
 import { getArticles } from '../../lib/storage';
 
@@ -53,14 +52,14 @@ export default function TeachingsPage() {
             Teachings &amp; Articles
           </h1>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Carefully written biblical expositions by Pastor Solomon Amao covering new creation identity, the ministry of the Holy Spirit, and practical discipleship.
+            Biblical expositions and teaching transcripts extracted directly from our broadcast episodes, covering new covenant identity, grace, and grounded spiritual maturity.
           </p>
         </div>
       </section>
 
       <div className="max-w-6xl mx-auto px-6">
         {/* Controls: Search & Category Filter */}
-        <div className="bg-white border border-[#E6E0D6] p-6 rounded shadow-sm mb-10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="bg-white border border-[#E6E0D6] p-6 rounded-lg shadow-sm mb-10 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Category Tabs */}
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((cat) => (
@@ -90,24 +89,18 @@ export default function TeachingsPage() {
           </div>
         </div>
 
-        {/* Results Counter & Admin Link */}
+        {/* Results Counter (No Admin link on front end) */}
         <div className="flex justify-between items-center mb-6 text-xs text-[#64748B]">
           <span>
             Showing <strong>{filteredArticles.length}</strong> article
             {filteredArticles.length === 1 ? '' : 's'}
             {selectedCategory !== 'All' ? ` in ${selectedCategory}` : ''}
           </span>
-          <Link
-            href="/admin"
-            className="text-[#B86C20] hover:underline font-semibold"
-          >
-            + Pastor Admin: Add New Article
-          </Link>
         </div>
 
         {/* Articles Grid */}
         {filteredArticles.length === 0 ? (
-          <div className="bg-white border border-[#E6E0D6] p-12 text-center rounded">
+          <div className="bg-white border border-[#E6E0D6] p-12 text-center rounded-lg">
             <p className="font-serif text-lg text-[#122236] mb-2">No articles found</p>
             <p className="text-xs text-[#64748B] mb-4">
               Try adjusting your search query or selecting another category.
@@ -127,7 +120,7 @@ export default function TeachingsPage() {
             {filteredArticles.map((art) => (
               <article
                 key={art.id}
-                className="bg-white border border-[#E6E0D6] rounded overflow-hidden shadow-sm hover:shadow-md hover:border-[#B86C20] transition-all flex flex-col group cursor-pointer"
+                className="bg-white border border-[#E6E0D6] rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:border-[#B86C20] transition-all flex flex-col group cursor-pointer"
                 onClick={() => setActiveArticle(art)}
               >
                 {art.imageUrl && (
@@ -169,22 +162,6 @@ export default function TeachingsPage() {
             ))}
           </div>
         )}
-
-        {/* 3 Articles Notice (Pastor Solomon upcoming slots) */}
-        <div className="bg-[#FAF8F5] border-2 border-dashed border-[#B86C20]/40 rounded-lg p-6 text-center max-w-xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#B86C20] block mb-1">
-            Editorial Pipeline
-          </span>
-          <p className="text-sm text-[#122236] font-medium mb-2">
-            Pastor Solomon Amao is preparing 3 brand-new expository manuscripts for publication this month.
-          </p>
-          <p className="text-xs text-[#64748B]">
-            These articles will appear automatically here and on the homepage as soon as they are submitted via the{' '}
-            <Link href="/admin" className="text-[#B86C20] font-semibold hover:underline">
-              Pastor Admin Portal
-            </Link>.
-          </p>
-        </div>
       </div>
 
       {/* Article Reader Modal */}
@@ -221,14 +198,14 @@ export default function TeachingsPage() {
                   {activeArticle.title}
                 </h1>
                 <div className="flex items-center gap-3 text-xs text-[#64748B] border-b border-[#EFEAE1] pb-4">
-                  <span>Author: <strong className="text-[#122236]">{activeArticle.author}</strong></span>
+                  <span>Source: <strong className="text-[#122236]">{activeArticle.author}</strong></span>
                   <span>•</span>
                   <span>{activeArticle.publishedAt}</span>
                 </div>
               </div>
 
               {activeArticle.imageUrl && (
-                <div className="mb-8 rounded overflow-hidden">
+                <div className="mb-8 rounded-lg overflow-hidden">
                   <img
                     src={activeArticle.imageUrl}
                     alt={activeArticle.title}

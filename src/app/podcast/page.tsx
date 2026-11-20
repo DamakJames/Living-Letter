@@ -102,7 +102,7 @@ export default function PodcastPage() {
             The Living Letters Podcast
           </h1>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto mb-6">
-            Listen to biblical audio teachings and sermons by Pastor Solomon Amao. Strengthen your faith and walk in spiritual authority.
+            Listen to biblical audio teachings and expository sermons from The Living Letters. Strengthen your faith and walk in spiritual authority.
           </p>
 
           <div className="flex flex-wrap justify-center items-center gap-3 text-xs">
@@ -120,7 +120,7 @@ export default function PodcastPage() {
               rel="noreferrer"
               className="bg-white/10 hover:bg-white/20 text-white font-semibold px-4 py-2 rounded transition-colors"
             >
-              Pastor Solomon’s Spotify Profile
+              Spotify Profile
             </a>
             <a
               href="https://www.youtube.com/@the-livingletters"

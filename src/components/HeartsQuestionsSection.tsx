@@ -32,7 +32,7 @@ export default function HeartsQuestionsSection() {
             Heart’s Questions (Video Discipleship)
           </h2>
           <p className="text-base text-[#64748B] mt-3 leading-relaxed">
-            Inspired by in-depth pastoral Q&amp;A ministries like <em>Desiring God</em>, Pastor Solomon Amao addresses honest questions submitted by believers with rigorous biblical exposition.
+            In-depth video broadcasts addressing real-life doctrinal questions and spiritual dilemmas submitted by believers with rigorous biblical exposition.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function HeartsQuestionsSection() {
           {videos.map((vid) => (
             <article
               key={vid.id}
-              className="bg-[#FAF8F5] border border-[#E6E0D6] rounded overflow-hidden shadow-sm hover:shadow-md hover:border-[#B86C20] transition-all flex flex-col group"
+              className="bg-[#FAF8F5] border border-[#E6E0D6] rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-[#B86C20] transition-all flex flex-col group"
             >
               {/* Thumbnail Container */}
               <div
@@ -90,85 +90,87 @@ export default function HeartsQuestionsSection() {
                   {vid.summary}
                 </p>
 
-                <div className="pt-4 border-t border-[#EFEAE1] flex items-center justify-between text-xs">
-                  <span className="text-[#64748B]">Answered by Pastor Solomon Amao</span>
+                <div className="pt-4 border-t border-[#EFEAE1] flex items-center justify-between">
                   <button
                     onClick={() => setActiveVideo(vid)}
-                    className="text-[#B86C20] hover:underline font-bold flex items-center gap-1"
+                    className="text-xs font-bold text-[#122236] hover:text-[#B86C20] flex items-center gap-1.5"
                   >
-                    Watch Video Episode →
+                    <span>▶</span> Watch Video Answer
                   </button>
+                  <Link
+                    href="/qa"
+                    className="text-xs font-bold text-[#B86C20] hover:underline"
+                  >
+                    Submit a Question →
+                  </Link>
                 </div>
               </div>
             </article>
           ))}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        {/* Bottom CTA to Full Video Library */}
+        <div className="text-center">
           <Link
             href="/qa"
-            className="bg-[#122236] hover:bg-[#0B1522] text-white font-bold text-sm px-6 py-3 rounded transition-all"
+            className="inline-flex items-center gap-2 bg-[#122236] hover:bg-[#B86C20] text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded transition-all shadow-sm"
           >
-            Explore Complete Video Q&amp;A Archive →
-          </Link>
-          <Link
-            href="/qa#ask"
-            className="bg-transparent hover:bg-gray-100 text-[#122236] font-bold text-sm px-6 py-3 rounded border border-[#122236] transition-all"
-          >
-            Submit a Question for Upcoming Videos
+            <span>▶</span> Browse All Video Answers &amp; Series Archives
           </Link>
         </div>
       </div>
 
       {/* Video Modal Player */}
       {activeVideo && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-[#122236] text-white w-full max-w-4xl rounded-lg overflow-hidden shadow-2xl relative animate-fadeIn">
-            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
+          <div
+            className="bg-[#122236] text-white rounded-lg max-w-3xl w-full overflow-hidden shadow-2xl border border-white/10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="p-4 border-b border-white/10 flex items-center justify-between">
               <div>
-                <span className="text-xs text-[#FBBF24] font-bold uppercase tracking-wider block">
+                <span className="text-[10px] font-bold text-[#FBBF24] uppercase tracking-wider block">
                   Episode {activeVideo.episodeNumber} • {activeVideo.releaseDay} Release
                 </span>
-                <h3 className="font-serif text-lg font-bold text-white leading-snug">
+                <h3 className="font-serif text-base sm:text-lg font-bold text-white line-clamp-1">
                   {activeVideo.title}
                 </h3>
               </div>
               <button
                 onClick={() => setActiveVideo(null)}
-                className="text-gray-400 hover:text-white text-2xl font-bold ml-4"
-                aria-label="Close video player"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-sm font-bold transition-colors"
+                aria-label="Close video"
               >
-                &times;
+                ✕
               </button>
             </div>
 
-            {/* Video Player */}
-            <div className="video-responsive bg-black">
+            {/* Video Embed Frame */}
+            <div className="relative aspect-video w-full bg-black">
               <iframe
-                src={`${activeVideo.videoEmbedUrl}?autoplay=1`}
+                src={activeVideo.videoEmbedUrl}
                 title={activeVideo.title}
+                width="100%"
+                height="100%"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                className="w-full h-full"
               />
             </div>
 
-            <div className="p-6 bg-[#0B1522]">
-              <div className="text-xs text-gray-400 mb-2">
-                <strong>Scriptures:</strong> {activeVideo.scripture}
-              </div>
-              <p className="text-sm text-gray-300 leading-relaxed mb-4">
-                {activeVideo.summary}
-              </p>
-              <div className="flex justify-between items-center text-xs text-gray-400">
-                <span>Speaker: Pastor Solomon Amao</span>
-                <button
-                  onClick={() => setActiveVideo(null)}
-                  className="bg-[#B86C20] hover:bg-[#92400E] text-white px-4 py-1.5 rounded font-bold"
-                >
-                  Close Video
-                </button>
-              </div>
+            {/* Modal Footer Notes */}
+            <div className="p-4 bg-[#0B1522] text-xs text-gray-300 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+              <span>Scripture: <strong className="text-white">{activeVideo.scripture}</strong></span>
+              <a
+                href={activeVideo.videoEmbedUrl.replace('/embed/', '/watch?v=')}
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#FBBF24] hover:underline font-semibold"
+              >
+                Watch on YouTube ↗
+              </a>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Utility Bar (Desiring God / WordPress Editorial Style) */}
+      {/* Top Utility Bar (Editorial Discipleship Motto) */}
       <div className="bg-[#0B1522] text-[#9CA3AF] text-xs py-1.5 border-b border-white/10 hidden md:block">
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -30,12 +30,8 @@ export default function Header() {
             <span>•</span>
             <span className="text-gray-300">EQUIP • ENCOURAGE • INSPIRE</span>
           </div>
-          <div className="flex items-center gap-5">
-            <span>Lead Minister: <strong className="text-white">Pastor Solomon Amao</strong></span>
-            <span>•</span>
-            <Link href="/admin" className="text-[#FBBF24] hover:underline font-semibold flex items-center gap-1">
-              🔒 Pastor Admin Portal
-            </Link>
+          <div className="flex items-center gap-4 text-gray-300">
+            <span>Known and read by all</span>
           </div>
         </div>
       </div>
@@ -54,8 +50,8 @@ export default function Header() {
               <span className="font-serif font-extrabold text-xl text-[#122236] tracking-tight leading-none group-hover:text-[#B86C20] transition-colors">
                 The Living Letters
               </span>
-              <span className="text-[10px] text-[#64748B] uppercase tracking-wider font-semibold mt-1">
-                Pastor Solomon Amao
+              <span className="text-[10px] text-[#B86C20] uppercase tracking-wider font-semibold mt-1">
+                Equip • Encourage • Inspire
               </span>
             </div>
           </Link>
@@ -133,13 +129,6 @@ export default function Header() {
                 >
                   Listen on Spotify
                 </a>
-                <Link
-                  href="/admin"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-xs font-bold text-[#B86C20] text-center py-1"
-                >
-                  Pastor Admin Portal
-                </Link>
               </div>
             </div>
           </div>

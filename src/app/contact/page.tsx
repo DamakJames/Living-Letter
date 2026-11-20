@@ -30,20 +30,20 @@ export default function ContactPage() {
 
   const faqs = [
     {
-      q: 'How can I invite Pastor Solomon Amao to preach or speak at our church or conference?',
-      a: 'Please select "Speaking Invitation" in the contact form below and include your church/ministry name, event dates, location, and the expected theme. Our ministry team reviews invitations prayerfully.',
+      q: 'How can I invite a minister to speak at our church or conference?',
+      a: 'Please select "Speaking Invitation" in the contact form below and include your church/ministry name, event dates, location, and the expected theme. Our ministry team reviews all invitations prayerfully.',
     },
     {
       q: 'How do I submit a question for the Heart’s Questions video broadcasts?',
-      a: 'You can submit doctrinal or personal questions directly through our Heart’s Questions page or select "Heart’s Questions Inquiry" below. Pastor Solomon records video responses every Tuesday and Friday.',
+      a: 'You can submit doctrinal or personal questions directly through our Heart’s Questions page or select "Heart’s Questions Inquiry" below. Our teaching team reviews and records video responses every Tuesday and Friday.',
     },
     {
       q: 'Are all sermons and study outlines free to download and share?',
-      a: 'Yes! Living Letters operates on the principle of Matthew 10:8: "Freely you have received; freely give." All teachings, outlines, and audio broadcasts are 100% free for gospel edification.',
+      a: 'Yes! The Living Letters operates on the principle of Matthew 10:8: "Freely you have received; freely give." All teachings, outlines, and audio broadcasts are 100% free for gospel edification.',
     },
     {
       q: 'When will the daily devotionals be launched?',
-      a: 'Due to Pastor Solomon’s academic schedule with two educational institutions, the daily devotionals are scheduled to launch next year. Our weekly expository articles and twice-weekly video answers are active.',
+      a: 'The daily devotionals are scheduled to launch next year as our ministry team finalizes the 28-day foundational curriculum. Our weekly expository articles and twice-weekly video teachings are currently active.',
     },
   ];
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
             Contact &amp; Inquiries
           </h1>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            We welcome your questions, speaking invitations for Pastor Solomon Amao, partnership notes, and prayer requests.
+            We welcome your questions, speaking invitations, partnership notes, and prayer requests.
           </p>
         </div>
       </section>
@@ -79,7 +79,7 @@ export default function ContactPage() {
               <div className="p-6 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-lg text-sm leading-relaxed">
                 <p className="font-bold text-base mb-1">✓ Thank you for reaching out!</p>
                 <p>
-                  Grace and peace to you. Your message has been received by our ministry team and Pastor Solomon Amao. We will respond promptly.
+                  Grace and peace to you. Your message has been received by our ministry team. We will respond promptly.
                 </p>
               </div>
             ) : (
@@ -124,7 +124,7 @@ export default function ContactPage() {
                     className="w-full px-4 py-2.5 text-xs bg-[#FAF8F5] border border-[#E6E0D6] rounded text-[#1E293B] focus:outline-none focus:border-[#B86C20]"
                   >
                     <option value="General Inquiry">General Inquiry</option>
-                    <option value="Speaking Invitation">Speaking Invitation for Pastor Solomon</option>
+                    <option value="Speaking Invitation">Speaking Invitation</option>
                     <option value="Heart’s Questions Inquiry">Question for Heart’s Questions Video Series</option>
                     <option value="Pastoral Prayer Request">Personal Prayer Request</option>
                     <option value="Resource Feedback">Feedback on Sermons &amp; Articles</option>
@@ -168,14 +168,14 @@ export default function ContactPage() {
             )}
           </div>
 
-          {/* Ministry Info & Office Details */}
+          {/* Ministry Info & Office Details (No admin link) */}
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-[#FAF8F5] border border-[#E6E0D6] rounded-lg p-8 shadow-sm">
               <h3 className="font-serif text-xl font-bold text-[#122236] mb-4">
-                Living Letters Ministry
+                The Living Letters Ministry
               </h3>
               <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed mb-6">
-                Founded by <strong>Pastor Solomon Amao</strong>. Dedicated to teaching Scripture, building disciples, and making Christ known through everyday believers.
+                A Christ-centered teaching and media ministry dedicated to equipping believers to live as letters written by the Holy Spirit—known and read by all.
               </p>
 
               <div className="space-y-4 text-xs text-[#334155] border-t border-[#EFEAE1] pt-6">
@@ -192,10 +192,8 @@ export default function ContactPage() {
                   <span>Within 48 to 72 business hours</span>
                 </div>
                 <div>
-                  <strong className="text-[#122236] block">Pastor Admin Portal:</strong>
-                  <Link href="/admin" className="text-[#B86C20] font-semibold hover:underline">
-                    Access Content Studio (Authorized Only)
-                  </Link>
+                  <strong className="text-[#122236] block">Motto:</strong>
+                  <span className="text-[#B86C20] font-bold">EQUIP • ENCOURAGE • INSPIRE</span>
                 </div>
               </div>
             </div>
@@ -204,7 +202,7 @@ export default function ContactPage() {
             <div className="bg-[#122236] text-white rounded-lg p-6 shadow-sm">
               <h4 className="font-serif text-lg font-bold mb-2">Have a Doctrinal Question?</h4>
               <p className="text-xs text-gray-300 leading-relaxed mb-4">
-                Watch Pastor Solomon Amao’s long-form video answers on Heart’s Questions or submit yours for consideration.
+                Watch our in-depth video answers on Heart’s Questions or submit yours for consideration.
               </p>
               <Link
                 href="/qa"

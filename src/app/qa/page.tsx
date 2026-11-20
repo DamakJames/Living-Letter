@@ -59,7 +59,7 @@ export default function QAPage() {
             Heart’s Questions (Video Discipleship)
           </h1>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Pastor Solomon Amao answers real-life questions submitted by believers with in-depth biblical exposition and pastoral care.
+            In-depth expository answers to real-life doctrinal and spiritual questions submitted by believers, grounded in the New Covenant of Grace.
           </p>
         </div>
       </section>

@@ -27,10 +27,10 @@ export default function FeaturedArticles() {
               Biblical Expositions
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-[#122236] tracking-tight">
-              Featured Articles by Pastor Solomon Amao
+              Featured Articles &amp; Expositions
             </h2>
             <p className="text-sm sm:text-base text-[#64748B] mt-2 max-w-xl">
-              Deep, Scripture-grounded theological writings designed to renew the mind and build lasting convictions.
+              Scripture-grounded theological writings and transcripts extracted directly from our teaching broadcasts.
             </p>
           </div>
           <Link
@@ -66,19 +66,22 @@ export default function FeaturedArticles() {
               {/* Body */}
               <div className="p-6 flex-1 flex flex-col">
                 <div className="text-xs text-[#64748B] mb-2 font-medium">
-                  By {art.author} • {art.readTime}
+                  {art.scripture} • {art.readTime}
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#122236] leading-snug mb-3 group-hover:text-[#B86C20] transition-colors">
-                  <Link href={`/teachings#${art.id}`}>{art.title}</Link>
+                <h3 className="font-serif text-xl font-bold text-[#122236] leading-snug mb-3 group-hover:text-[#B86C20] transition-colors">
+                  <Link href="/teachings">{art.title}</Link>
                 </h3>
-                <p className="text-xs sm:text-sm text-[#334155] leading-relaxed mb-6 flex-1">
+                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed mb-6 flex-1">
                   {art.excerpt}
                 </p>
+
                 <div className="pt-4 border-t border-[#EFEAE1] flex items-center justify-between">
-                  <span className="text-xs font-semibold text-[#B86C20]">{art.scripture}</span>
+                  <span className="text-xs font-semibold text-[#122236]">
+                    {art.author}
+                  </span>
                   <Link
-                    href={`/teachings#${art.id}`}
-                    className="text-xs font-bold text-[#122236] hover:text-[#B86C20] hover:underline"
+                    href="/teachings"
+                    className="text-xs font-bold text-[#B86C20] group-hover:translate-x-1 transition-transform flex items-center gap-1"
                   >
                     Read Article →
                   </Link>
